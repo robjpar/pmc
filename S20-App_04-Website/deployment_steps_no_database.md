@@ -11,13 +11,17 @@
 1. Create an account on www.heroku.com.
 2. Download and install Heroku CLI from <https://devcenter.heroku.com/articles/heroku-cli>.
 
+## Virtual Environment Creation (if not already done)
+
+1. Create a virtual Python environment in the directory that contains your app directory with `python -m venv .venv`. Activate the virtual environment with `.venv\Scripts\activate`. Install all the necessary packages, for example `pip install flask`. The virtual environment can be deactivated with `deactivate`.
+
 ## HTTP Server Installation (if not already done)
 
 1. Install `gunicorn` with `pip install gunicorn`. Make sure you're using pip from your virtual environment if you have one.
 
 ## Configuration Files Preparation (repeat if configuration changed)
 
-1. Create a file named `Procfile` in the main app directory. The file should not contain any extension. Then type in this line inside: `web: gunicorn server:app` where `server` should be replaced with the name of your Python script and `app` with the name of the variable holding your Flask app.
+1. Create a file named `Procfile` in the main app directory. The file should not have any extension. Then type in this line inside: `web: gunicorn server:app` where `server` should be replaced with the name of your Python script and `app` with the name of the variable holding your Flask app.
 2. Create a `requirement.txt` file in the main app directory where the main Python app file is located. You can create that file by running `pip freeze > requirements.txt` in the command line. Make sure you're using pip from your virtual environment if you have one. The `requirement.txt` file should now contain a list of Python packages.
 3. Create a `runtime.txt` file in the main app directory and type `python-3.8.2` inside. See <https://devcenter.heroku.com/articles/python-runtimes> for more details.
 
