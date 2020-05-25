@@ -4,5 +4,11 @@
         "editor.rulers": [
             80
         ]
-    }
+    },
+    "cSpell.words": [
+        "imread",
+        "imshow",
+        "imwrite",
+        "ndim"
+    ]
 }
