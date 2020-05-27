@@ -4,5 +4,8 @@
 # Ignore html files for the repository language classification
 *.html linguist-detectable=false
 
+# Ignore css files for the repository language classification
+*.css linguist-detectable=false
+
 # Ignore Jupyter notebooks files for the repository language classification
 *.ipynb linguist-detectable=false
