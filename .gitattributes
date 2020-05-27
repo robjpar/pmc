@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Ignore html files for the repository language classification
+*.html linguist-detectable=false
