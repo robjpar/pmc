@@ -8,10 +8,14 @@
     },
     "cSpell.words": [
         "RETR",
+        "bokeh",
         "cnts",
         "imread",
         "imshow",
         "imwrite",
-        "ndim"
+        "ndim",
+        "strftime",
+        "yaxis",
+        "ygrid"
     ]
 }

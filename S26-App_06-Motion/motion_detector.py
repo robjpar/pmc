@@ -5,7 +5,7 @@ import pandas
 first_frame = None
 status_list = [None, None]
 times = []
-df = pandas.DataFrame(columns=['Start', 'End'])
+df = pandas.DataFrame(columns=['start', 'end'])
 
 CAMERA_PORT = 0  # - front camera
 # CAMERA_PORT = 1  # - rear camera
@@ -27,7 +27,6 @@ while True:
     delta_frame = cv2.absdiff(first_frame, gray)
     cv2.imshow('Delta Frame', delta_frame)
 
-    # thresh_frame = cv2.threshold(delta_frame, 30, 255, cv2.THRESH_BINARY)[1]
     thresh_frame = cv2.threshold(delta_frame, 70, 255, cv2.THRESH_BINARY)[1]
     thresh_frame = cv2.dilate(thresh_frame, None, iterations=2)
     cv2.imshow('Threshold Frame', thresh_frame)
@@ -46,6 +45,7 @@ while True:
     cv2.imshow('Color Frame', frame)
 
     status_list.append(status)
+    status_list = status_list[-2:]
 
     if status_list[-1] == 1 and status_list[-2] == 0:
         times.append(datetime.now())
@@ -59,9 +59,9 @@ while True:
         break
 
 for i in range(0, len(times), 2):
-    df = df.append({'Start': times[i], 'End': times[i + 1]}, ignore_index=True)
+    df = df.append({'start': times[i], 'end': times[i + 1]}, ignore_index=True)
 
-df.to_csv('Times.csv')
+df.to_csv('times.csv')
 
 video.release()
 cv2.destroyAllWindows()
