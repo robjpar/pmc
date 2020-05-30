@@ -1,4 +1,4 @@
-# Steps to deploy a static Flask website to Heroku
+# Steps to deploy a Flask website to Heroku
 
 ## Git Installation (if not already done)
 
