@@ -33,7 +33,7 @@
 4. Commit the changes with `git commit -m "first commit"`. Make sure `"first commit"` is inside quotes.
 5. Using the terminal, log in to Heroku with `heroku login`.
 6. Enter your Heroku email address and password.
-7. If not already done, create a new Heroku app with `heroku create my-app-name`. (Run `heroku apps` to list all already created apps.)
+7. If not already done, create a new Heroku app with `heroku create my-app-name`. (Run `heroku apps` to list all already created apps. Run `heroku info` to display info about currently selected app.)
 8. Before pushing the changes to Heroku, tell Heroku the name of the app you want to use with `heroku git:remote --app my-app-name`.
 9. Push the changes to Heroku with `git push heroku master`.
 10. That should do it. Go ahead and open your app with `heroku open`.
