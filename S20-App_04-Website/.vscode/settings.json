@@ -4,8 +4,8 @@
         "gunicorn",
         "venv"
     ],
-    "python.pythonPath": "c:\\Users\\roobb\\GitHub\\Python_Mega_Course\\S20-App_04-Website\\.venv\\Scripts\\python.exe",
     "editor.rulers": [
         79
     ],
+    "python.pythonPath": ".venv\\Scripts\\python.exe"
 }
