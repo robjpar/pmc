@@ -1,0 +1,11 @@
+{
+    "python.pythonPath": ".venv\\Scripts\\python.exe",
+    "cSpell.words": [
+        "ehlo",
+        "gmail",
+        "gunicorn",
+        "pycache",
+        "smtplib",
+        "venv"
+    ]
+}
