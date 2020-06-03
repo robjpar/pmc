@@ -2,5 +2,8 @@
     "python.pythonPath": ".venv\\Scripts\\python.exe",
     "cSpell.words": [
         "kivy"
+    ],
+    "editor.rulers": [
+        79
     ]
 }
