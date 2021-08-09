@@ -10,7 +10,7 @@ Kivy-Garden==0.1.4
 pycodestyle==2.6.0
 Pygments==2.6.1
 pypiwin32==223
-pywin32==227
+pywin32==301
 requests==2.23.0
 toml==0.10.1
 urllib3==1.25.9
